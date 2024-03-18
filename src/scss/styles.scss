@@ -1,0 +1,21 @@
+#main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+
+.imageCheckbox {
+    appearance: none;
+    background-size: 7.5% 7.5%, cover;
+    background-position: 5% 5%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    height: 0;
+    padding-bottom: calc(100% - 8px);
+    border: 4px white solid;
+    &:checked {
+        border: 4px red solid;
+    }
+}
