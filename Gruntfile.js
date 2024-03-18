@@ -7,8 +7,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     copy: {
       main: {
-        src: 'src/index.html',
-        dest: 'dist/index.html',
+        files: [
+          {src: 'src/index.html', dest: 'dist/index.html'},
+          {src: 'src/favicon.ico', dest: 'dist/favicon.ico'},
+        ]
       },
     },
     sass: {
